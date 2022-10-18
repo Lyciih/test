@@ -28,7 +28,8 @@ Github 點頭像-> Settings -> Personal settings -> SSH and GPG keys
 ssh -T git@github.com
 
 設定遠端儲存庫
-git remote add origin （庫的SSH地址）      例如 git remote add origin git@github.com:Lyciih/test.git
+git remote add origin （庫的SSH地址）      例如 git remote add origin git@github.com:Lyciih/test.git 
+（origin是後面地址的別名，這樣以後究不用打很長。也不一定要取origin，可以隨自己喜好）
 
 ---
 本地端 新資料夾
