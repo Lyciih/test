@@ -22,6 +22,7 @@ ssh-add ~/.ssh/id_rsa
 cat ~/.ssh/id_rsa.pub
 
 最後將KEY貼到github裡
+Github 點頭像-> Settings -> Personal settings -> SSH and GPG keys
 
 測試ssh是否成功
 ssh -T git@github.com
@@ -54,6 +55,8 @@ git push
 
 刪除遠端分支
 git push origin --delete 分支名
+刪除本地分支
+git branch -d 分支名
 
 本地分支改名
 git branch -m 舊名 新名
