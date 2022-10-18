@@ -1,2 +1,62 @@
 你好
 
+在本地端電腦產生SSH的key
+ssh-keygen -t rsa -b 4096 -C "email"
+
+輸入指令後會問以下問題
+
+    輸入儲存位置
+    輸入密碼，可為空
+    再次輸入密碼，可為空
+
+建立 SSH key 後要將其加入代理，好讓之後可以使用
+
+確認 ssh-agent 是否正常運行
+eval "$(ssh-agent -s)"
+
+將密鑰加入 ssh-agent 內
+ssh-add ~/.ssh/id_rsa
+
+
+顯示剛剛生成的key
+cat ~/.ssh/id_rsa.pub
+
+最後將KEY貼到github裡
+
+測試ssh是否成功
+ssh -T git@github.com
+
+設定遠端儲存庫
+git remote add origin （庫的SSH地址）      例如 git remote add origin git@github.com:Lyciih/test.git
+
+---
+本地端 新資料夾
+
+初始化
+git init
+
+有任何修改及新增檔案都要 git add .  或 git add 檔名
+
+查詢目前狀態 git status
+
+將修改正式保存 git commit -m "本次資訊（隨便打或是說明這次做了什麼）"
+---
+
+第一次push
+git push -u origin main
+
+之後只要
+git push 
+
+若要強制就加 -f
+
+查詢現有分支 git branch
+
+刪除遠端分支
+git push origin --delete 分支名
+
+本地分支改名
+git branch -m 舊名 新名
+
+
+
