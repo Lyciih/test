@@ -45,7 +45,7 @@ git init
 ---
 
 第一次push
-git push -u origin main
+git push -u origin main （-u 是當成功時，把後面的地址跟分支名記錄下來，下次就不用再打）
 
 之後只要
 git push 
