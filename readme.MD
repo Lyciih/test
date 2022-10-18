@@ -61,5 +61,10 @@ git branch -d 分支名
 本地分支改名
 git branch -m 舊名 新名
 
+將本地檔案更新成跟github上一樣
+git pull (可加 origin 分支名)
+
+git pull --rebase    參數表示「內容抓下來之後請使用 Rebase 方式合併。
+
 
 
