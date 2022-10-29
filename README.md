@@ -67,5 +67,8 @@ git pull (可加 origin 分支名)
 
 git pull --rebase    參數表示「內容抓下來之後請使用 Rebase 方式合併。
 
-
+如果你在github上新建一個倉庫並且含有Readme，然後在本地新開一個資料夾並且 git init，那你要先git pull才能push，但是因為兩邊歷史紀錄不同，不能直接pull，所以在pull時要加上參數
+--allow-unrelated-histories
+以下是範例
+git pull origin main --allow-unrelated-histories
 
