@@ -73,3 +73,9 @@ git pull --rebase    參數表示「內容抓下來之後請使用 Rebase 方式
 git pull origin main --allow-unrelated-histories
 
 https://meet.google.com/dyt-rymb-wuj
+
+
+放棄所有修改，重置成最後一次commit的狀態
+git fetch
+git reset --hard HEAD
+git merge '@{u}'
