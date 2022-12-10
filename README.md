@@ -43,6 +43,8 @@ git init
 
 將修改正式保存 git commit -m "本次資訊（隨便打或是說明這次做了什麼）"
 ---
+第一次push前
+git branch -M main
 
 第一次push
 git push -u origin main （-u 是當成功時，把後面的地址跟分支名記錄下來，下次就不用再打）
