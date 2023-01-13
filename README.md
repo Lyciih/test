@@ -46,7 +46,7 @@ git init
 第一次push前
 git branch -M main
 
-第一次push
+第一次push時
 git push -u origin main （-u 是當成功時，把後面的地址跟分支名記錄下來，下次就不用再打）
 
 如果件資料庫時有readme 然後本地要push發生錯誤
